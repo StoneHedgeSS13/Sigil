@@ -1,6 +1,6 @@
 
-## Solaris Ridge
-This is the codebase for Solaris Ridge; a medieval codebase within the wider Space Station 13 ecosystem.
+## Sigil
+This is Dreamkeep's fork of Solaris Ridge, revised to take place in a setting not altogether dissimilar from D&D's 'Planescape' setting.
 
 ## LICENSE
 The TGS DMAPI is licensed as a subproject under the MIT license.
