@@ -10,7 +10,7 @@
 	 She is said to be both cruel and calm, if her icey waters and wailing winds are heeded ahead of time.\
 	  She is the warning and the Omen; given to be interpeted as a primal fury due to her strong connection to the depths of raw emotion. "
 	worshippers = "Sea-farers, Fishermen, Cartographers, and Diviners."
-	mob_traits = list(TRAIT_CINELLA_SWIM, TRAIT_SEA_DRINKER)
+	mob_traits = list(TRAIT_CINELLA_SWIM, TRAIT_SEA_DRINKER, TRAIT_EMPATH)
 	t1 = /obj/effect/proc_holder/spell/invoked/cinella_bends
 	t2 = /obj/effect/proc_holder/spell/invoked/abyssheal
 	t3 = /obj/effect/proc_holder/spell/invoked/call_mossback
@@ -28,7 +28,7 @@
 	Warriors across the lands drink to his name after and before a battle - adopting his famous style of duel-wielding and valiant onslaught\
 	as one of the most ferocious forms known across the realms."
 	worshippers = "Adventurers, Ambitious Warriors, Goodly folk, the determined and hopeful."
-	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT)
+	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT, TRAIT_STEELHEARTED)
 	t1 = /obj/effect/proc_holder/spell/self/divine_strike
 	t2 = /obj/effect/proc_holder/spell/self/call_to_arms
 	t3 = /obj/effect/proc_holder/spell/invoked/persistence
@@ -42,3 +42,14 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/bud
 	t2 = /obj/effect/proc_holder/spell/invoked/variellecurse
 	t3 = null
+
+/datum/patron/peoples_pantheon/svaeryhog
+	name = "Svaeryhog"
+	domain = "Forge, Artisan, Smithy, Craft."
+	desc = "The titan said to have been entasked by Seraph Iros to make the world. They resemble a massive molten giant golem. They are not fond of waste or lack of discipline.""
+	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_BETTER_SLEEP, TRAIT_VARIELLE)
+	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
+	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
+	t3 = /obj/effect/proc_holder/spell/invoked/hammerfall
+	t4 = /obj/effect/proc_holder/spell/invoked/craftercovenant
+	extra_spell = /obj/effect/proc_holder/spell/invoked/nunos_flame_rogue
