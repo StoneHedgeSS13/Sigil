@@ -18,19 +18,15 @@
 /datum/patron/peoples_pantheon/minhur
 	name = "Minhur"
 	domain = "God of Heroics, Determination, Dance, Glory."
-	desc = "Minhur was said to be a Half elf in his mortal life, \
-	the result of a mortal humen and a mortal dark elf.\
-	 His skin was dark like that of the sand nations his father hailed;\
-	 And he was said to have hailed from a place where the bones stirred and the corpses often walked from the hands of powerful magicians who specialized\
-	  in perverting the souls against their will into legions. \
-	  Minhur's saga's speak of his work to cleanse the lands of the dark necromancer lords that once plagued them in his homelands,\
-	   wiping them cleansed with divine flame swords gifted by his godly ally Svaeryog,\
-	    the Golem Smyth.
-
-Thanks to his shrewd sense of justice and outlook on life, many came to know Minhur as the god of Determination,\
-	     War, Dance, Celebration and Glory.\
-	      Warriors across the lands drink to his name after and before a battle - adopting his famous style of duel-wielding and valiant onslaught\
-	       as one of the most ferocious forms known across the realms."
+	desc = "Minhur was said to be a Dune Elf in his mortal life, \
+	His skin was dark like that of his kin; finding glory in their early days, following Jayx and Yamais across the sand-seas in pursuit of protecting the sands of time.\
+	And he was said to have hailed from a place where the bones stirred and the corpses often walked from the hands of powerful magicians who specialized\
+	Minhur's saga's speak of his work to cleanse the lands of the dark necromancer lords that once plagued them in these times, beridding many corrupt and evil liches.\
+	He wiped them clean with the divine twin flame swords gifted by his godly ally Svaeryog,the Golem Smyth.\
+	Thanks to his shrewd sense of justice and outlook on life, many came to know Minhur as the god of Determination,\
+	War, Dance, Celebration.\
+	Warriors across the lands drink to his name after and before a battle - adopting his famous style of duel-wielding and valiant onslaught\
+	as one of the most ferocious forms known across the realms."
 	worshippers = "Adventurers, Ambitious Warriors, Goodly folk, the determined and hopeful."
 	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT)
 	t1 = /obj/effect/proc_holder/spell/self/divine_strike
