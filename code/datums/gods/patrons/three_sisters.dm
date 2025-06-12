@@ -1,10 +1,10 @@
-/datum/patron/three_sisters
+/datum/patron/
 	name = null
 	associated_faith = /datum/faith/three_sisters
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
-/datum/patron/three_sisters/tamari
-	name = "Tamari"
+/datum/patron/Twinsnayke/Seraph
+	name = "Seraph Iros"
 	domain = "Nature, Growth, Evolution, Earth"
 	desc = "Fickle and stubborn, the Earthmother Tamari has long been worshipped by druids, farmers, and those who find their home far away from metropolitan civilization. \
 			It is said that she stole light from the sun and created life, and it is under her guiding hand that life was free to change, to adapt, to grow, to alter the world around \
@@ -16,7 +16,7 @@
 	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
 	t4 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
 
-/datum/patron/three_sisters/nunos
+/datum/patron/Twinsnayke/Levisth
 	name = "Nunos"
 	domain = "Fire, Technology, Labour, the Forge, Metal"
 	desc = "The most contested of the Three Sisters, it is unknown if Nunos is even still considered divinely 'female' - let alone if they prefer the human name Nunos. \
@@ -31,14 +31,3 @@
 	t4 = /obj/effect/proc_holder/spell/invoked/craftercovenant
 	extra_spell = /obj/effect/proc_holder/spell/invoked/nunos_flame_rogue
 
-/datum/patron/three_sisters/kasmidian
-	name = "Kasmidian"
-	domain = "Enchanting Goddess of the Arcane"
-	desc = "Magic is just as much an art as it is a science, and Kasmidian fancies herself an artist; unchained, untamed, unbound. It is she that whispers deep secrets of magic to scholars that \
-			toil in her libraries; it is her that hides secrets of magic among the stars for astronomers to find; it is her that embodies the ideal that change will come, and it is one's duty to \
-			understand that change so that they may act with it. It is unknown if she first gifted magic to mortalkind, but many faiths of other churches contest that her gifts are well-intentioned, \
-			or may end well at all - though most wizards, divorced from the church, care not, and worship the Astral Muse as they see fit."
-	worshippers = "Wizards, Astrologers, Scholars, Artists, and Eccentrists."
-	mob_traits = list(TRAIT_KASMIDIAN)
-	t1 = /obj/effect/proc_holder/spell/invoked/wheel
-	t2 = /obj/effect/proc_holder/spell/invoked/mockery

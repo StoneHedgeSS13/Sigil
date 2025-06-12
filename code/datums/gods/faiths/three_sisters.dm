@@ -1,7 +1,5 @@
-/datum/faith/three_sisters
-	name = "The Three Sisters"
-	desc = "The Three Sisters are oft viewed as the parents of science, champions of change, and were once contested as Gods of Chaos... but in the crucible of the Dusk War, \
-			all divines showed their merit, and Change was embraced as a necessity, just as much as it was an inevitability. Among them are Tamari, the Mother of Earth; Nunos, \
-			the Herald of Fire; and Kasmidian, the Arcane Mistress."
-	worshippers = "Changebringers, Wildlings, Wizards, Craftsfolk, and Adventurers."
-	godhead = /datum/patron/three_sisters/tamari
+/datum/faith/Twinsnaykes
+	name = "The Twin Snaykes"
+	desc = "The two cosmic serpents are known far and wide as being the primordial forces of all creation and all destruction. Worshipping them is considered ambitious - often the goals of those who wish to take on their burdens alongside them; formed of a shard of their power."
+	worshippers = "Changebringers, Dreamers, Wizards, Twilight Heralds, Druids and Adventurers."
+	godhead = /datum/patron/three_sisters/seraph
