@@ -40,7 +40,8 @@
 	name = "Belanos"
 	domain = "Summer"
 	desc = "Belanos is known as the Summer Monarch; a title that infers a duty in the sylvan faith to uphold the courts justice and lead their forces in times of need.\
-	 They wield their rath and sense of determination to fight back the darkness."
+	They wield their rath and sense of determination to fight back the darkness.\
+	Belanos is said to be a master artisan, crafting artifacts, magical charms and blades that sing with magick alike."
 	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT, TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/self/divine_strike
 	t2 = /obj/effect/proc_holder/spell/self/call_to_arms
