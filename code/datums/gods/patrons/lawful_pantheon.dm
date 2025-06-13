@@ -19,9 +19,9 @@
 /datum/patron/lawful_pantheon/lune
 	name = "Lune"
 	domain = "Balance; The Moon, Masks, Secrets, Alteration, Nighttime, and Yearning"
-	desc = "The Moonmaiden, the Lady of Night, Zira is one half of the two Prime Deities alongside her Brother, Elysius. \
+	desc = "The Moonmaiden, the Lady of Night, Lune is one half of the two Prime Lawful Deities alongside her Brother, Elysius. \
 			Her domain is night, her voice moonlight, and her influence is that compassion and firmness, decorum and \
-			self-actualization, has guided the hands of wizard, priest, ruler, and commoner alike, teaching that gentility \
+			self-actualization. They have guided the hands of wizard, priest, ruler, and commoner alike, teaching that gentility \
 			is just as necessary as might."
 	worshippers = "Children of the Night, the Gentle, Caretakers, Secretkeepers, Magicians, Wisdom-Seekers and Lovers"
 	mob_traits = list(TRAIT_NIGHT_OWL, TRAIT_ZIRASIGHT)

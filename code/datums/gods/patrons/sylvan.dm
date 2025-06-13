@@ -62,7 +62,7 @@
 	t3 =
 
 /datum/patron/sylvan/gwybb
-	name = "gwybb"
+	name = "Gwybb"
 	domain = "Poison, Goblins, Spite, Betrayal, Trickery."
 	desc = "Gwybb the Goblin King, the schemer down below in the roots. Gwybb loves a good scheme of impassioned vengeance - showing their venom to those whom\
 	make the mistake of thinking him a fool and even relishing in their hubris to his advantage."
