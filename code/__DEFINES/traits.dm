@@ -58,7 +58,7 @@
 
 
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
-#define TRAIT_ZIRASIGHT "Blessing of Zira" // Clearer night vision; roughly equivalent to wearing mesons in base SS13.
+#define TRAIT_ZIRASIGHT "Darksight" // Clearer night vision; roughly equivalent to wearing mesons in base SS13.
 #define TRAIT_DEATHSIGHT "Veiled Whispers" // Is notified when a player character dies, but not told exactly where or how.
 //Hearthstone/Azure end.
 
@@ -68,19 +68,19 @@
 #define TRAIT_WATERBREATHING "Water Breathing"
 
 // PATRON GOD TRAITS
-#define TRAIT_KNEESTINGER_IMMUNITY "Blessing of Tamari"
-#define TRAIT_SOUL_EXAMINE "Blessing of Tsoridys" //can check bodies to see if they have departed // SOLARIS NOTE: why the fuck would you obfuscate critical info like this. oughhghgh
-#define TRAIT_CHOSEN "Aeternus' Chosen"
+#define TRAIT_KNEESTINGER_IMMUNITY "Blessing of the forest."
+#define TRAIT_SOUL_EXAMINE "Soul-Watcher" //can check bodies to see if they have departed // SOLARIS NOTE: why the fuck would you obfuscate critical info like this. oughhghgh
+#define TRAIT_CHOSEN "Fatestruck"
 #define TRAIT_CINELLA_SWIM "Blessing of Cinella" //less base fatigue drain when swimming
-#define TRAIT_KASMIDIAN "Blessing of Kasmidian" //secret thieves cant language
-#define TRAIT_VARIELLE "Blessing of Varielle" //Overjoyed by music
-#define TRAIT_FORGEBLESSED "Blessing of Nunos" //Reduces the fatigue cost of smithing a bit.
+#define TRAIT_KASMIDIAN "Thieves cant" //secret thieves cant language
+#define TRAIT_VARIELLE "Muse-Touched" //Overjoyed by music
+#define TRAIT_FORGEBLESSED "Blessing of Forge" //Reduces the fatigue cost of smithing a bit.
 #define TRAIT_APRICITY	"Apricity" //Decreased stamina regen time during "day"
 #define TRAIT_SHARPER_BLADES "Sharper Blades" //Weapons lose less blade integrity
-#define TRAIT_JUSTICARSIGHT "Blessing of Carthus" //Allows seeing bounties and crimes when examining outlaws.
+#define TRAIT_JUSTICARSIGHT "Oath of Justice" //Allows seeing bounties and crimes when examining outlaws.
 #define TRAIT_EXTEROCEPTION	"Exteroception" //See others' hunger and thirst; pairs well with empath.
 #define TRAIT_BLACKLEG	"Blackleg" //Rig coin, dice, cards in your favor - UNUSED FOR NOW
-#define TRAIT_BETTER_SLEEP	"Better Sleep" //Recover more energy (blue bar) when sleeping
+#define TRAIT_BETTER_SLEEP	"Dreamer" //Recover more energy (blue bar) when sleeping
 #define TRAIT_LEECHIMMUNE "Unleechable" //leeches wont attach in bog squares + tamari boon.
 #define TRAIT_LONGSTRIDER "Longstrider"
 

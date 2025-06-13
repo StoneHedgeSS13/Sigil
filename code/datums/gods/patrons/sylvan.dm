@@ -22,11 +22,10 @@
 	Said to be one of the first fairy to walk beyond the veil; they found the forests and opened the waygates which led to the druids and wood elves finding their way to this place.\
 	Other rumors speak that the Spring-King was a close friend of Seraph Iros; who let the moth-like fairy ride on their back imparting the wisdom of the lands to them over the span of forever."
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY, TRAIT_WOODWALKER, TRAIT_SEEDKNOW)
-	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
-	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
-	t3 = /obj/effect/proc_holder/spell/invoked/hammerfall
-	t4 = /obj/effect/proc_holder/spell/invoked/craftercovenant
-	extra_spell = /obj/effect/proc_holder/spell/invoked/nunos_flame_rogue
+	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
+	t2 = /obj/effect/proc_holder/spell/self/tamari_shapeshift
+	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
+	t4 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
 
 /datum/patron/sylvan/danulir
 	name = "Danu'lir"

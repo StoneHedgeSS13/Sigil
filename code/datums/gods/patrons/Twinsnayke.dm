@@ -11,22 +11,17 @@
 	The happening of the present as we know it -- less than a fractal second in the eternity they persist maintaining the perpetuation of the dream."
 	worshippers = "Druids, Nomads, Naturalists, Outsiders, and Wanderers."
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY, TRAIT_LEECHIMMUNE)
-	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
-	t2 = /obj/effect/proc_holder/spell/self/tamari_shapeshift
-	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
-	t4 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
+	t1 = /obj/effect/proc_holder/spell/invoked/wheel
+	t2 = /obj/effect/proc_holder/spell/invoked/mockery
 
 /datum/patron/twinsnayke/levishth
 	name = "levishth"
 	domain = "Death, Darkness, Entropy, Lies, Betrayal, Blood."
 	desc = "Levisth was said to be all that was long before Seraph, choosing to become small for their siblings turn of eternity. They are known to impart the secrets of unlife upon their followers\
 	As well as teaching them ways to use their charisma and intelligence to gain the better of their foes. They are fond of shadows and secrecy; often leading many down a path of manipulation and evil."
-	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_BETTER_SLEEP)
-	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
-	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
-	t3 = /obj/effect/proc_holder/spell/invoked/hammerfall
-	t4 = /obj/effect/proc_holder/spell/invoked/craftercovenant
-	extra_spell = /obj/effect/proc_holder/spell/invoked/nunos_flame_rogue
+	mob_traits = list(TRAIT_TOXIMMUNE, TRAIT_BETTER_SLEEP)
+	t1 = /obj/effect/proc_holder/spell/invoked/wheel
+	t2 = /obj/effect/proc_holder/spell/invoked/mockery
 
 /datum/patron/twinsnayke/coil
 	name = "the Coil"

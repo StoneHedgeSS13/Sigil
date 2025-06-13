@@ -35,7 +35,7 @@
 
 /datum/patron/peoples_pantheon/viriitri
 	name = "Viriitri"
-	domain = "Goddess of All Love, Sexuality & Harmony."
+	domain = "Goddess of All Love, Healthy Sexuality & Harmony."
 	desc = "Viiritri is a goddess of emotions, soul and the matters of the heart. Viiritri teaches the art of feeling, and their devoted are often spiritual healers and lovers of all walks. Viiritri is said to take the shape of songbirds and other mystical acts  of inspiration. Their realm known as Halceon is rumored to be full of song, dance and bliss to those who loved truly, purely and freely in her service."
 	worshippers = "Lovers, Romantics, Providers, Empaths."
 	mob_traits = list(TRAIT_VARIELLE, TRAIT_EMPATH, TRAIT_EXTEROCEPTION)
