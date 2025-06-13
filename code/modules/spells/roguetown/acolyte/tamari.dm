@@ -10,7 +10,7 @@
 	cast_without_targets = TRUE
 	sound = 'sound/magic/churn.ogg'
 	associated_skill = /datum/skill/magic/holy
-	invocation = "The Treefather commands thee, be fruitful!"
+	invocation = "The Tree commands thee, be fruitful!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 20
@@ -27,7 +27,7 @@
 		if(amount_blessed >= 5)
 			break
 	if(growed)
-		visible_message(span_green("[usr] blesses the nearby crops with Tamari's Favour!"))
+		visible_message(span_green("[usr] blesses the nearby crops with Nature's Favour!"))
 	return growed
 
 //At some point, this spell should Awaken beasts, allowing a ghost to possess them. Not for this PR though.
@@ -50,7 +50,7 @@
 
 /obj/effect/proc_holder/spell/targeted/beasttame/cast(list/targets,mob/user = usr)
 	. = ..()
-	visible_message(span_green("[usr] soothes the beastblood with Tamari's whisper."))
+	visible_message(span_green("[usr] soothes the beastblood with Nature's whisper."))
 	var/tamed = FALSE
 	for(var/mob/living/simple_animal/hostile/retaliate/animal in get_hearers_in_view(2, usr))
 		if((animal.mob_biotypes & MOB_UNDEAD))
@@ -108,17 +108,17 @@
 	// if they don't have beast language somehow, give it to them
 	if (!user.has_language(/datum/language/beast))
 		user.grant_language(/datum/language/beast)
-		to_chat(user, span_boldnotice("The vestige of the hidden moon high above reveals His truth: the knowledge of beast-tongue was in me all along."))
-	
+		to_chat(user, span_boldnotice("The vestige of the hidden moon high above reveals it's truth: the knowledge of beast-tongue was in me all along."))
+
 	if (!first_cast)
-		to_chat(user, span_boldwarning("So it is murmured in the Earth and Air: the Call of the Moon is sacred, and to share knowledge gleaned from it with those not of Him is a SIN."))
-		to_chat(user, span_boldwarning("Ware thee well, child of Tamari."))
+		to_chat(user, span_boldwarning("So it is murmured in the Earth and Air: the Call of the Moon is sacred, and to share knowledge gleaned from it with those not of their gaze is TABBOO."))
+		to_chat(user, span_boldwarning("Ware thee well, child of moon."))
 		first_cast = TRUE
 	. = ..()
-	
+
 /obj/effect/proc_holder/spell/self/tamari_shapeshift
 	name = "Beast Form"
-	desc = "Take on the form of one of Tamari's sacred beasts."
+	desc = "Take on the form of one of nature's sacred beasts."
 	overlay_state = "tamebeast"
 	releasedrain = 60
 	charge_max = 60 SECONDS
@@ -129,7 +129,7 @@
 	miracle = TRUE
 	clothes_req = FALSE
 	human_req = FALSE
-	
+
 	var/transformed = FALSE
 	var/transforming = FALSE
 	var/revert_on_death = TRUE
@@ -201,26 +201,26 @@ var/static/list/druid_forms = list(
 /obj/effect/proc_holder/spell/self/tamari_shapeshift/cast(mob/living/carbon/human/user)
 	if(!user)
 		return FALSE
-	
+
 	if(!saved_form)
 		var/list/animal_list = list()
 		var/druidic_level = user.mind?.get_skill_level(/datum/skill/magic/druidic) || 0
-		
+
 		for(var/animal_name in druid_forms)
 			var/list/animal_data = druid_forms[animal_name]
 			if(animal_data["level"] <= druidic_level)
 				animal_list[animal_name] = animal_data["path"]
-				
+
 		if(!length(animal_list))
 			to_chat(user, span_warning("Your druidic knowledge is insufficient to take on any beast forms!"))
 			return FALSE
-			
+
 		var/new_shapeshift_type = input(user, "Choose Your Animal Form! (Druidic Level: [druidic_level])", "It's Morphing Time!", null) as null|anything in sortList(animal_list)
 		if(!new_shapeshift_type)
 			return FALSE
-			
+
 		saved_form = animal_list[new_shapeshift_type]
-	
+
 	selected_form = saved_form
 	if(selected_form)
 		do_shapeshift(user)
@@ -231,44 +231,44 @@ var/static/list/druid_forms = list(
 		// If already shapeshifted, restore to human form
 		do_restore(caster)
 		return
-	
+
 	// Store original state and paralyze briefly during transformation TO beast form only
 	var/oldinv = caster.invisibility
 	caster.invisibility = INVISIBILITY_MAXIMUM
 	caster.Paralyze(1, ignore_canstun = TRUE)
-	
+
 	// Transformation effects and messages
 	caster.flash_fullscreen("redflash3") // Same effect as werewolves
 	to_chat(caster, span_userdanger("Your bones crack and reshape as Tamari's blessing takes hold!"))
 	caster.visible_message(span_warning("[caster]'s form begins to twist and contort unnaturally!"), \
 						  span_warning("The transformation is agonizing!"))
-	
+
 	// Drop all items EXCEPT the psicross
 	for(var/obj/item/W in caster)
 		if(!istype(W, /obj/item/clothing/neck/roguetown/psicross/tamari))
 			caster.dropItemToGround(W)
-	
+
 	// Add transformation effects
 	playsound(caster.loc, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	caster.spawn_gibs(FALSE)
-	
+
 	// Create new mob with its own fresh stats
 	var/mob/living/simple_animal/hostile/shape = new selected_form(caster.loc)
-	
+
 	// Create shapeshift holder with proper typing
 	shapeshift_holder = new /obj/shapeshift_holder(shape, src, caster)
-	
+
 	// Keep original stats from the mob type
 	shape.maxHealth = initial(shape.maxHealth)
 	shape.health = shape.maxHealth
 	shape.melee_damage_lower = initial(shape.melee_damage_lower)
 	shape.melee_damage_upper = initial(shape.melee_damage_upper)
 	shape.dodgetime = 20 // Allow dodging for all forms
-	
+
 	// Enable combat capabilities
 	shape.dextrous = TRUE
 	shape.held_items = list(null, null)
-	
+
 	// Disable AI completely to prevent wandering
 	shape.can_have_ai = FALSE
 	shape.AIStatus = AI_OFF
@@ -278,7 +278,7 @@ var/static/list/druid_forms = list(
 	shape.stat_attack = CONSCIOUS
 	shape.environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	ADD_TRAIT(shape, TRAIT_BASHDOORS, TRAIT_GENERIC)
-	
+
 	// Form-specific setup
 	switch(selected_form)
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/mole)
@@ -289,7 +289,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 25
 			shape.melee_damage_upper = 35
 			shape.rot_type = null
-			
+
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/wolf)
 			shape.attack_verb_continuous = "mauls"
 			shape.attack_verb_simple = "maul"
@@ -298,7 +298,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 30
 			shape.melee_damage_upper = 40
 			shape.rot_type = null
-			
+
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/troll)
 			shape.attack_verb_continuous = "crushes"
 			shape.attack_verb_simple = "crush"
@@ -316,7 +316,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 45
 			shape.melee_damage_upper = 65
 			shape.rot_type = null
-			
+
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/spider)
 			shape.attack_verb_continuous = "bites"
 			shape.attack_verb_simple = "bite"
@@ -370,7 +370,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 40
 			shape.melee_damage_upper = 60
 			shape.rot_type = null
-			
+
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/saiga)
 			shape.attack_verb_continuous = "rams"
 			shape.attack_verb_simple = "ram"
@@ -379,7 +379,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 25
 			shape.melee_damage_upper = 35
 			shape.rot_type = null
-			
+
 		else // Default animal form setup
 			shape.attack_verb_continuous = "attacks"
 			shape.attack_verb_simple = "attack"
@@ -388,68 +388,68 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 15
 			shape.melee_damage_upper = 25
 			shape.rot_type = null
-	
-	
+
+
 	// Combat setup
 	shape.faction = list("rogueanimal")
 	shape.a_intent = INTENT_HARM
 	shape.update_a_intents()
-	
+
 	// Register death signal
 	RegisterSignal(shape, COMSIG_LIVING_DEATH, PROC_REF(handle_death))
-	
+
 	// Store original mob and transfer mind BEFORE moving the caster
 	if(caster.mind)
 		caster.mind.transfer_to(shape)
 		shape.name = "[caster.real_name] ([initial(shape.name)])"
 		shape.real_name = shape.name
-	
+
 	// Move caster into holder AFTER mind transfer
 	caster.forceMove(shapeshift_holder)
-	
+
 	// Reset visibility and update icons
 	shape.invisibility = oldinv
 	caster.invisibility = oldinv  // Reset original mob visibility too
 	shape.update_icon()
 	shape.regenerate_icons()
-	
+
 	// Start cooldown
 	if(action)
 		action.UpdateButtonIcon()
 	recharging = TRUE  // Set recharging flag to true
 	charge_counter = 0 // Reset counter to 0
 	START_PROCESSING(SSfastprocess, src)  // Ensure the spell is being processed
-	
+
 	return shape
 
 /obj/effect/proc_holder/spell/self/tamari_shapeshift/proc/do_restore(mob/living/shape)
 	var/obj/shapeshift_holder/shapeshift_holder = locate() in shape
 	if(!shapeshift_holder)
 		return
-	
+
 	var/was_dead = shape.stat == DEAD
-	
+
 	// Store visibility and apply it
 	var/oldinv = shape.invisibility
 	shape.invisibility = INVISIBILITY_MAXIMUM
-	
+
 	// Add transformation effects
 	playsound(shape.loc, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	shape.spawn_gibs(FALSE)
-	
+
 	// Set transforming state
 	transforming = TRUE
-	
+
 	// Restore original form
 	shapeshift_holder.restore()
-	
+
 	// Reset transformation flags
 	transformed = FALSE         // No longer transformed
 	transforming = FALSE       // Not in transformation process
-	
+
 	// Reset visibility
 	shape.invisibility = oldinv
-	
+
 	if(was_dead)
 		charge_counter = 0
 		charge_max = death_cooldown
@@ -457,11 +457,11 @@ var/static/list/druid_forms = list(
 	else
 		charge_counter = 0  // Start the normal cooldown
 		recharging = TRUE   // Enable recharging
-	
+
 	START_PROCESSING(SSfastprocess, src)  // Ensure the spell is being processed
 	if(action)
 		action.UpdateButtonIcon()
-	
+
 	if(was_dead)
 		to_chat(shape, span_warning("The strain of your form's death leaves you unable to shapeshift again for some time!"))
 
@@ -509,22 +509,22 @@ var/static/list/druid_forms = list(
 
 /obj/effect/proc_holder/spell/self/tamari_shapeshift/proc/handle_death(mob/living/shape)
 	SIGNAL_HANDLER
-	
+
 	var/obj/shapeshift_holder/H = locate() in shape
 	if(!H)
 		return
-	
+
 	// Set cooldown before restoration
 	charge_counter = 0
 	charge_max = death_cooldown  // Set to long cooldown
 	recharging = TRUE  // Ensure recharging is set to true
 	START_PROCESSING(SSfastprocess, src)  // Ensure the spell is being processed
-	
+
 	if(action)
 		action.UpdateButtonIcon()  // Update the button to show recharging
-	
+
 	// Restore form and notify
 	to_chat(H.stored, span_warning("The strain of your form's death leaves you unable to shapeshift again for some time!"))
 	do_restore(shape)
-	
+
 	UnregisterSignal(shape, COMSIG_LIVING_DEATH)

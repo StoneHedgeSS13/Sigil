@@ -13,7 +13,7 @@
 	associated_skill = /datum/skill/magic/holy
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/magic/timestop.ogg'
-	invocation = "By Carthus, stand and fight!"
+	invocation = "By fire within, stand and fight!"
 	invocation_type = "shout"
 	antimagic_allowed = TRUE
 	miracle = TRUE
