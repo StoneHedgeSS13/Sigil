@@ -574,7 +574,6 @@
 #include "code\datums\gods\patrons\chaos_pantheon.dm"
 #include "code\datums\gods\patrons\lording_three.dm"
 #include "code\datums\gods\patrons\neutral_pantheon.dm"
-#include "code\datums\gods\patrons\peoples_pantheon.dm"
 #include "code\datums\gods\patrons\sylvan.dm"
 #include "code\datums\gods\patrons\twinsnayke.dm"
 #include "code\datums\helper_datums\events.dm"

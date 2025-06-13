@@ -1,9 +1,9 @@
-/datum/patron/peoples_pantheon
+/datum/patron/good_pantheon
 	name = null
-	associated_faith = /datum/faith/peoples_pantheon
+	associated_faith = /datum/faith/good_pantheon
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
-/datum/patron/peoples_pantheon/abyssia
+/datum/patron/good_pantheon/abyssia
 	name = "Abyssia"
 	domain = "Goddess of the Seas"
 	desc = "The Beloved Daughter of the Sea, Abyssia  gifted primordial kin food and drink from the cradle that nestled life before the lands.\
@@ -15,7 +15,7 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/abyssheal
 	t3 = /obj/effect/proc_holder/spell/invoked/call_mossback
 
-/datum/patron/peoples_pantheon/minhur
+/datum/patron/good_pantheon/minhur
 	name = "Minhur"
 	domain = "God of Heroics, Determination, Dance, Glory."
 	desc = "Minhur was said to be a Dune Elf in his mortal life, \
@@ -33,7 +33,7 @@
 	t2 = /obj/effect/proc_holder/spell/self/call_to_arms
 	t3 = /obj/effect/proc_holder/spell/invoked/persistence
 
-/datum/patron/peoples_pantheon/viriitri
+/datum/patron/good_pantheon/viriitri
 	name = "Viriitri"
 	domain = "Goddess of All Love, Healthy Sexuality & Harmony."
 	desc = "Viiritri is a goddess of emotions, soul and the matters of the heart. Viiritri teaches the art of feeling, and their devoted are often spiritual healers and lovers of all walks. Viiritri is said to take the shape of songbirds and other mystical acts  of inspiration. Their realm known as Halceon is rumored to be full of song, dance and bliss to those who loved truly, purely and freely in her service."
@@ -43,7 +43,7 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/variellecurse
 	t3 = null
 
-/datum/patron/peoples_pantheon/svaeryhog
+/datum/patron/good_pantheon/svaeryhog
 	name = "Svaeryhog"
 	domain = "Forge, Artisan, Smithy, Craft."
 	desc = "The titan said to have been entasked by Seraph Iros to make the world. They resemble a massive molten giant golem. They are not fond of waste or lack of discipline.""
