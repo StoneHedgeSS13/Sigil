@@ -1,7 +1,7 @@
 /// Formerly a xenobiology artefact in standard SS13; the 'heroine bud' pacifies it's wearer and makes them unable to remove it from their own person.
 /obj/item/clothing/head/peaceflower
-	name = "variellian bud"
-	desc = "A flower of gentle petals, associated with Varielle or Tsoridys. Usually adorned as a headress or laid at graves as a symbol of love or peace."
+	name = "Flower of Life"
+	desc = "A flower of gentle petals, associated with Nature, Love, Death, Wisdom and Adbundance. Usually adorned as a headress or laid at graves as a symbol of rememberance."
 	icon = 'icons/roguetown/items/produce.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head_items.dmi'
 	icon_state = "peaceflower"
@@ -34,7 +34,7 @@
 	return ..()
 
 /obj/effect/proc_holder/spell/invoked/bud
-	name = "Variellian Bloom"
+	name = "Budding Bloom"
 	desc = ""
 	clothes_req = FALSE
 	range = 7

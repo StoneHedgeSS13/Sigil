@@ -10,7 +10,7 @@
 	cast_without_targets = TRUE
 	sound = 'sound/magic/churn.ogg'
 	associated_skill = /datum/skill/magic/holy
-	invocation = "Tsoridys grant thee passage forth and spare the trials of the forgotten."
+	invocation = "The keeper granteth thee passage forthe, spare are thee of trials forgotten."
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 5 //very weak spell, you can just make a grave marker with a literal stick

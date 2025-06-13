@@ -10,7 +10,7 @@
 	Has led many to be contacted in their sleep by the mysterious folk who work alongside them known as 'Dreamers' ..\
 	 They are said to linger below the woods of Breuddwyrd, keeping hold of the forces of autumn and working with the other courts."
 	mob_traits = list(TRAIT_BETTER_SLEEP, TRAIT_DEATHSIGHT, TRAIT_EXTEROCEPTION)
-	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
+	t1 = /obj/effect/proc_holder/spell/targeted/soulspeak
 	t2 = /obj/effect/proc_holder/spell/self/tamari_shapeshift
 	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
 	t4 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
@@ -36,6 +36,7 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/abyssheal
 	t2 = /obj/effect/proc_holder/spell/invoked/call_mossback
 	t3 = /obj/effect/proc_holder/spell/invoked/persistence
+	t4 = /obj/effect/proc_holder/spell/invoked/cinella_bends
 
 /datum/patron/sylvan/belanos
 	name = "Belanos"
@@ -44,9 +45,10 @@
 	They wield their rath and sense of determination to fight back the darkness.\
 	Belanos is said to be a master artisan, crafting artifacts, magical charms and blades that sing with magick alike."
 	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT, TRAIT_APRICITY)
-	t1 = /obj/effect/proc_holder/spell/self/divine_strike
-	t2 = /obj/effect/proc_holder/spell/self/call_to_arms
-	t3 = /obj/effect/proc_holder/spell/invoked/persistence
+	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
+	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
+	t3 = /obj/effect/proc_holder/spell/invoked/craftercovenant
+	t4 = /obj/effect/proc_holder/spell/self/divine_strike
 
 /datum/patron/sylvan/maibe
 	name = "Maib"
@@ -55,6 +57,9 @@
 	she favors heroes of fate left otherwise forlorn without her visions in the night; both terrifying and awe-inspiring -- none forget the touch of her mark on the minds garden.\
 	She is often revered in the region of Breuddwyrd due to it being a close realm to the feywild; rumored to be near her gates and corridors."
 	mob_traits = list(TRAIT_BETTER_SLEEP)
+	t1 =
+	t2 =
+	t3 =
 
 /datum/patron/sylvan/gwybb
 	name = "gwybb"
@@ -62,3 +67,6 @@
 	desc = "Gwybb the Goblin King, the schemer down below in the roots. Gwybb loves a good scheme of impassioned vengeance - showing their venom to those whom\
 	make the mistake of thinking him a fool and even relishing in their hubris to his advantage."
 	mob_traits = list(TRAIT_TOXIMMUNE)
+	t1 =
+	t2 =
+	t3 =

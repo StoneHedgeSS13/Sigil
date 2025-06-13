@@ -11,13 +11,13 @@
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
 	charge_max = 5 MINUTES
-	
+
 /obj/effect/proc_holder/spell/invoked/wheel/cast(list/targets, mob/user = usr)
 	if(isliving(targets[1]))
 		var/mob/living/target = targets[1]
 		if(target.anti_magic_check(TRUE, TRUE))
 			return FALSE
-		target.apply_status_effect(/datum/status_effect/wheel)		
+		target.apply_status_effect(/datum/status_effect/wheel)
 		return TRUE
 	revert_cast()
 	return FALSE
@@ -38,7 +38,7 @@
 		if(!target.can_hear()) // Vicious mockery requires people to be able to hear you.
 			revert_cast()
 			return FALSE
-		target.apply_status_effect(/datum/status_effect/debuff/viciousmockery)	
+		target.apply_status_effect(/datum/status_effect/debuff/viciousmockery)
 		return TRUE
 	revert_cast()
 	return FALSE
@@ -69,7 +69,7 @@
 			if(11)
 				user.say("You may need a smith- for you seem ill-equipped for a battle of wits!", forced = "spell")
 			if(12)
-				user.say("Looks as if thou art PSY-DONE! No? Too soon? Alright.", forced = "spell")
+				user.say("Looks as if thou art WITHOUT COURTIERS! No? Too soon? Alright.", forced = "spell")
 			if(13)
 				user.say("Carthus bring justice to your useless mentor, ser!", forced = "spell")
 

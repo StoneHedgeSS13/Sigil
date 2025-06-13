@@ -4,9 +4,12 @@
 	desc = "Yamais is the guardian, the crypt-scribe, and the great remembrance. They watch over all things lawfully in the afterlife - having gained ultimate neutrality due to their records and study of fate alongside Jayx."
 	worshippers = "Scribes, Oathkeepers, Book-Keepers, Librarians, Paladins, Goodly Liches, Goodly Vampires, Goodly Undead."
 	mob_traits = list(TRAIT_APRICITY)
-	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
+	t1 = /obj/effect/proc_holder/spell/invoked/diagnose/cast(list/targets, mob/living/user)
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
-	t3 = /obj/effect/proc_holder/spell/invoked/revive
+	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot
+	t4 = /obj/effect/proc_holder/spell/invoked/revive
+	extra_spell = /obj/effect/proc_holder/spell/invoked/attach_bodypart
+	extra_spell = /obj/effect/proc_holder/spell/targeted/burialrite
 
 /datum/patron/neutral_pantheon/jayx
 	name = "Jayx"
@@ -26,5 +29,5 @@
 	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_NOSTINK)	//No stink is generic but they deal with dead bodies so.. makes sense, I suppose?
 	t1 = /obj/effect/proc_holder/spell/invoked/avert
 	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
-	t3 = /obj/effect/proc_holder/spell/targeted/churn
+	t3 = /obj/effect/proc_holder/spell/invoked/stasis
 	extra_spell = /obj/effect/proc_holder/spell/targeted/soulspeak
