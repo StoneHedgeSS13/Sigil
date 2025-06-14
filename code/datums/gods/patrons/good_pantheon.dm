@@ -9,7 +9,7 @@
 	desc = "The Beloved Daughter of the Sea, Abyssia  gifted primordial kin food and drink from the cradle that nestled life before the lands.\
 	 She is said to be both cruel and calm, if her icey waters and wailing winds are heeded ahead of time.\
 	  She is the warning and the Omen; given to be interpeted as a primal fury due to her strong connection to the depths of raw emotion. "
-	worshippers = "Sea-farers, Fishermen, Cartographers, and Diviners."
+	worshippers = "Sea-farers, Fishermen, Cartographers, and Diviners and Lovers faced with grave distance between them."
 	mob_traits = list(TRAIT_CINELLA_SWIM, TRAIT_SEA_DRINKER, TRAIT_EMPATH)
 	t1 = /obj/effect/proc_holder/spell/invoked/cinella_bends
 	t2 = /obj/effect/proc_holder/spell/invoked/abyssheal

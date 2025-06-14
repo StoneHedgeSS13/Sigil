@@ -1,6 +1,18 @@
+/datum/patron/evil_pantheon/orckhest
+	name = "Orckhest"
+	domain = "Opression and Indulgence; Consumption, Scorched Earth, Annhilation, Blood, Hatred."
+	desc = "Orckhest is said to hunger for blood more than any Other known being -- even the vampires who sustained themselves off of it. An Orc in his life, he died and found himself within the hells; to which he climbed rapidly into his dominion as the Blood Prince.\
+	Orckhest is said to have an insatiable hunger for the living - being a force of unlife himself. Nothing but warm blood has ever nourished him. It is said that Orckhest wishes to drown out all life until\
+	He is all that is left - the ultimate beast of the endtimes. Their face was skeletal; and their body had the hooves of a goat; with diseased and deathly skin like that of the walking dead.
+	worshippers = "Devils, Warmongers, Necromancers, Evil Undead, Barbarians."
+	mob_traits = list(TRAIT_APRICITY)
+	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
+	t2 = /obj/effect/proc_holder/spell/invoked/heal
+	t3 = /obj/effect/proc_holder/spell/invoked/revive
+
 /datum/patron/chaos_pantheon/rathyx
 	name = "Rathyx"
-	domain = "Opression and Indulgence; War, Chaos, Suffering, Consumption, Hatred."
+	domain = "Lawful Evil; War, Dominance, Hatred, Contract."
 	desc = "Rathyx was once a lethal warrior of the Infernal planes. Rathyx claimed the throne of hell; ascending to the god of ultimate domination."
 	worshippers = "Devils, Warmongers, Tyranny, Lies."
 	mob_traits = list(TRAIT_APRICITY)
@@ -8,15 +20,7 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
 
-/datum/patron/neutral_pantheon/jayx
-	name = "Jayx"
-	domain = "Magic, Twilight, Change."
-	desc = "Jayx, born from the winds of change and magick birthed from the dream at Seraphs behest. Jayx follows the winds of fate; a loyal companion of Yamais since the dawn of time. Together with the queen of sovls, they focus on whatever work is often most important to perpetuating order in the multiverse."
-	mob_traits = list(TRAIT_NIGHT_OWL, TRAIT_ZIRASIGHT)
-	t1 = /obj/effect/proc_holder/spell/invoked/blindness/miracle
-	t2 = /obj/effect/proc_holder/spell/invoked/invisibility/miracle
-
-/datum/patron/chaos_pantheon/zahmtess
+/datum/patron/evil_pantheon/zahmtess
 	name = "Zahm'Tess"
 	domain = "Death, Time, Fate, Negative Energy, Doom."
 	desc = "A very Evil and wicked lich; Zahm'Tess is known across not only Astralith, but every plane of existence -- given unto the fact they see only two energies. Good and Evil.\
@@ -28,4 +32,3 @@
 	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
 	t3 = /obj/effect/proc_holder/spell/targeted/churn
 	extra_spell = /obj/effect/proc_holder/spell/targeted/soulspeak
-
