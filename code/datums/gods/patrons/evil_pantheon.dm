@@ -3,12 +3,13 @@
 	domain = "Opression and Indulgence; Consumption, Scorched Earth, Annhilation, Blood, Hatred."
 	desc = "Orckhest is said to hunger for blood more than any Other known being -- even the vampires who sustained themselves off of it. An Orc in his life, he died and found himself within the hells; to which he climbed rapidly into his dominion as the Blood Prince.\
 	Orckhest is said to have an insatiable hunger for the living - being a force of unlife himself. Nothing but warm blood has ever nourished him. It is said that Orckhest wishes to drown out all life until\
-	He is all that is left - the ultimate beast of the endtimes. Their face was skeletal; and their body had the hooves of a goat; with diseased and deathly skin like that of the walking dead.
-	worshippers = "Devils, Warmongers, Necromancers, Evil Undead, Barbarians."
+	He is all that is left - the ultimate beast of the endtimes. Their face was skeletal; and their body had the hooves of a goat; with diseased and deathly skin like that of the walking dead."
+	worshippers = "Devils, Warmongers, Necromancers, Evil Undead, Evil Warriors."
 	mob_traits = list(TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
+	extra_spell
 
 /datum/patron/chaos_pantheon/rathyx
 	name = "Rathyx"
