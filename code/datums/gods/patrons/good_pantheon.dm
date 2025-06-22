@@ -17,7 +17,7 @@
 
 /datum/patron/good_pantheon/minhur
 	name = "Minhur"
-	domain = "God of Heroics, Determination, Dance, Glory."
+	domain = "Good Chaotic. (God of Heroics, Determination, Dance, Glory.)"
 	desc = "Minhur was said to be a Dune Elf in his mortal life, \
 	His skin was dark like that of his kin; finding glory in their early days, following Jayx and Yamais across the sand-seas in pursuit of protecting the sands of time.\
 	And he was said to have hailed from a place where the bones stirred and the corpses often walked from the hands of powerful magicians who specialized\
@@ -35,7 +35,7 @@
 
 /datum/patron/good_pantheon/viriitri
 	name = "Viriitri"
-	domain = "Goddess of All Love, Healthy Sexuality & Harmony."
+	domain = "Good Chaotic. Goddess of Love, Health, Warmth and Harmony.)"
 	desc = "Viiritri is a goddess of emotions, soul and the matters of the heart. Viiritri teaches the art of feeling, and their devoted are often spiritual healers and lovers of all walks. Viiritri is said to take the shape of songbirds and other mystical acts  of inspiration. Their realm known as Halceon is rumored to be full of song, dance and bliss to those who loved truly, purely and freely in her service."
 	worshippers = "Lovers, Romantics, Providers, Empaths."
 	mob_traits = list(TRAIT_VARIELLE, TRAIT_EMPATH, TRAIT_EXTEROCEPTION)
@@ -45,7 +45,7 @@
 
 /datum/patron/good_pantheon/svaeryhog
 	name = "Svaeryhog"
-	domain = "Forge, Artisan, Smithy, Craft."
+	domain = "Good Lawful. (Forge, Artisan, Smithy, Craft.)"
 	desc = "The titan said to have been entasked by Seraph Iros to make the world. They resemble a massive molten giant golem. They are not fond of waste or lack of discipline.""
 	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_BETTER_SLEEP, TRAIT_VARIELLE)
 	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
