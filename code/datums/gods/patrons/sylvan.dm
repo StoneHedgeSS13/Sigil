@@ -57,9 +57,6 @@
 	she favors heroes of fate left otherwise forlorn without her visions in the night; both terrifying and awe-inspiring -- none forget the touch of her mark on the minds garden.\
 	She is often revered in the region of Breuddwyrd due to it being a close realm to the feywild; rumored to be near her gates and corridors."
 	mob_traits = list(TRAIT_BETTER_SLEEP)
-	t1 =
-	t2 =
-	t3 =
 
 /datum/patron/sylvan/gwybb
 	name = "Gwybb"
@@ -67,6 +64,3 @@
 	desc = "Gwybb the Goblin King, the schemer down below in the roots. Gwybb loves a good scheme of impassioned vengeance - showing their venom to those whom\
 	make the mistake of thinking him a fool and even relishing in their hubris to his advantage."
 	mob_traits = list(TRAIT_TOXIMMUNE)
-	t1 =
-	t2 =
-	t3 =

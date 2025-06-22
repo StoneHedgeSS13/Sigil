@@ -6,7 +6,7 @@
 	Telling the truth unbiased and weighing a soul fairly in every instance."
 	worshippers = "Scribes, Oathkeepers, Book-Keepers, Librarians, Paladins, Goodly Liches, Goodly Vampires, Goodly Undead."
 	mob_traits = list(TRAIT_APRICITY)
-	t1 = /obj/effect/proc_holder/spell/invoked/diagnose/cast(list/targets, mob/living/user)
+	t1 = /obj/effect/proc_holder/spell/invoked/diagnose/secular
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot
 	t4 = /obj/effect/proc_holder/spell/invoked/revive

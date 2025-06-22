@@ -11,8 +11,7 @@ They are said to eat bad dreams. Those who invoked them too many times often hav
 /datum/patron/chaos_pantheon/masque
 	name = "The Masque"
 	domain = "Chaotic Neutral. ( Theft, Trickery, Stealth, Wit)"
-	desc = "Despite his trickery, cunning and theft -- the thief has been worshipped by the downtrodden and clever for as long as many can remember. His halls always where coin might be stolen or hoarded; his eyes always gleaming on that which is not his as much as what could be with time and wit.
-"
+	desc = "Despite his trickery, cunning and theft -- the thief has been worshipped by the downtrodden and clever for as long as many can remember. His halls always where coin might be stolen or hoarded; his eyes always gleaming on that which is not his as much as what could be with time and with."
 	worshippers = "Evil Liches, Necromancers, Evil Undead, Evil Magicians, Evil-Ass Evil people."
 	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_NOSTINK)	//No stink is generic but they deal with dead bodies so.. makes sense, I suppose?
 	t1 = /obj/effect/proc_holder/spell/invoked/avert

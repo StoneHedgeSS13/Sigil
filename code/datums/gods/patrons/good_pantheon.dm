@@ -46,7 +46,7 @@
 /datum/patron/good_pantheon/svaeryhog
 	name = "Svaeryhog"
 	domain = "Good Lawful. (Forge, Artisan, Smithy, Craft.)"
-	desc = "The titan said to have been entasked by Seraph Iros to make the world. They resemble a massive molten giant golem. They are not fond of waste or lack of discipline.""
+	desc = "The titan said to have been entasked by Seraph Iros to make the world. They resemble a massive molten giant golem. They are not fond of waste or lack of discipline."
 	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_BETTER_SLEEP, TRAIT_VARIELLE)
 	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
 	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
