@@ -1,6 +1,6 @@
 /datum/patron/twinsnayke
 	name = null
-	associated_faith = /datum/faith/three_sisters
+	associated_faith = /datum/patron/twinsnayke
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/twinsnayke/seraph

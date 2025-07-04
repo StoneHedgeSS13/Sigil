@@ -149,17 +149,66 @@
 )
 
 #define ALL_PATRONS  list(\
-	/datum/patron/lording_three/aeternus, \
-	/datum/patron/lording_three/zira, \
-	/datum/patron/lording_three/tsoridys, \
-	/datum/patron/peoples_pantheon/carthus, \
-	/datum/patron/peoples_pantheon/varielle, \
-	/datum/patron/peoples_pantheon/cinella, \
-	/datum/patron/three_sisters/tamari, \
-	/datum/patron/three_sisters/kasmidian, \
-	/datum/patron/three_sisters/nunos, \
+	/datum/patron/lawful_pantheon/elysius, \
+	/datum/patron/lawful_pantheon/lune, \
+	/datum/patron/lawful_pantheon/prethwyn, \
+	/datum/patron/good_pantheon/abyssia,  \
+	/datum/patron/good_pantheon/viriitri, \
+	/datum/patron/good_pantheon/minhur, \
+	/datum/patron/good_pantheon/svaeryhog, \
+	/datum/patron/neutral_pantheon/yamais, \
+	/datum/patron/neutral_pantheon/onder, \
+	/datum/patron/chaos_pantheon/hermeit, \
+	/datum/patron/chaos_pantheon/jayx, \
+	/datum/patron/chaos_pantheon/noctis, \
+	/datum/patron/chaos_pantheon/masque, \
+	/datum/patron/chaos_pantheon/rathyx, \
+	/datum/patron/evil_pantheon/orckhest, \
+	/datum/patron/evil_pantheon/zahmtess, \
+	/datum/patron/evil_pantheon/nyrnhe, \
+	/datum/patron/sylvan/aaravos, \
+	/datum/patron/sylvan/sylvarhn, \
+	/datum/patron/sylvan/danulir, \
+	/datum/patron/sylvan/belanos, \
+	/datum/patron/sylvan/maibe, \
+	/datum/patron/sylvan/gwybb, \
+	/datum/patron/twinsnayke/seraph, \
+	/datum/patron/twinsnayke/levishth, \
+	/datum/patron/twinsnayke/coil, \
 	)
 
+#define ALL_LAWFUL_PATRONS  list(\
+	/datum/patron/lawful_pantheon/elysius, \
+	/datum/patron/lawful_pantheon/lune, \
+	/datum/patron/lawful_pantheon/prethwyn, \
+	)
+/*
+#define ALL_CHAOTIC_PATRONS  list(\
+	/datum/patron/chaos_pantheon/rathyx, \
+	/datum/patron/neutral_pantheon/noctis, \
+	/datum/patron/chaos_pantheon/masque, \
+	)
+
+	#define ALL_GOOD_PATRONS  list(\
+	/datum/patron/good_pantheon/abyssia, \
+	/datum/patron/good_pantheon/minhur, \
+	/datum/patron/good_pantheon/viriitri, \
+	/datum/patron/good_pantheon/svaeryhog, \
+	)
+
+	#define ALL_EVIL_PATRONS  list(\
+	/datum/patron/evil_pantheon/orckhest, \
+	/datum/patron/evil_pantheon/zahmtess, \
+	/datum/patron/evil_pantheon/nyrnhe, \
+	)
+
+#define ALL_NEUTRAL_PATRONS  list(\
+	/datum/patron/neutral_pantheon/yamais, \
+	/datum/patron/neutral_pantheon/onder, \
+	/datum/patron/chaos_pantheon/hermeit, \
+	/datum/patron/chaos_pantheon/jayx, \
+	)
+*/
 #define PLATEHIT "plate"
 #define CHAINHIT "chain"
 #define SOFTHIT "soft"

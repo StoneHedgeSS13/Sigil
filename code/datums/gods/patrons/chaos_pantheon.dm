@@ -1,4 +1,4 @@
-/datum/patron/neutral_pantheon/noctis
+/datum/patron/chaos_pantheon/noctis
 	name = "Noctis"
 	domain = "Chaotic Neutral. (Nightmares, Fear, Sacrifice, Loss)"
 	desc = "The sacrifice is what most call them. They comes to the sleeping; and many have come to rely on Noctis to help them in painful memories.\

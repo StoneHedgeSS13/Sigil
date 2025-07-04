@@ -129,9 +129,9 @@
 	. = ..()
 	var/weapons = list("Katar")
 	switch(H.patron?.type)
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			weapons += "Close Caress"
-		if(/datum/patron/peoples_pantheon/cinella)
+		if(/datum/patron/good_pantheon/abyssia)
 			weapons += "Barotrauma"
 
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons

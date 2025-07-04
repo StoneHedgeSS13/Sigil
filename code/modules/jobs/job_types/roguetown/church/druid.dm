@@ -26,7 +26,7 @@
 /datum/outfit/job/roguetown/druid
 	name = "Druid"
 	jobtype = /datum/job/roguetown/druid
-	allowed_patrons = list(/datum/patron/three_sisters/tamari)
+	allowed_patrons = list(/datum/patron/sylvan/sylvarhn)
 
 /datum/outfit/job/roguetown/druid/pre_equip(mob/living/carbon/human/H)
 	..()
