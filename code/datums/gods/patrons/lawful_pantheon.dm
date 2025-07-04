@@ -1,6 +1,6 @@
 /datum/patron/lawful_pantheon
 	name = null
-	associated_faith = /datum/patron/lawful_pantheon
+	associated_faith = /datum/faith/lawful_pantheon
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/lawful_pantheon/elysius
