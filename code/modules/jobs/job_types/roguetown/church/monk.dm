@@ -34,31 +34,31 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/ritechalk)
 	switch(H.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
+		if(/datum/patron/lawful_pantheon/elysius)
 			head = /obj/item/clothing/head/roguetown/roguehood/aeternus
 			neck = /obj/item/clothing/neck/roguetown/psicross/aeternus
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/aeternus
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			head = /obj/item/clothing/head/roguetown/zirahood
 			neck = /obj/item/clothing/neck/roguetown/psicross/zira
 			wrists = /obj/item/clothing/wrists/roguetown/zirawrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/zira
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		if(/datum/patron/peoples_pantheon/cinella) // the deep calls!
+		if(/datum/patron/good_pantheon/abyssia) // the deep calls!
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			pants = /obj/item/clothing/under/roguetown/tights
 			neck = /obj/item/clothing/neck/roguetown/psicross/cinella
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/cinella
 			head = /obj/item/clothing/head/roguetown/roguehood/cinella		
-		if(/datum/patron/three_sisters/tamari) //Tamarites all busted. Play Druid.
+		if(/datum/patron/sylvan/sylvarhn) //Tamarites all busted. Play Druid.
 			head = /obj/item/clothing/head/roguetown/tamarimask
 			neck = /obj/item/clothing/neck/roguetown/psicross/tamari
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/tamari
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/yamais)
 			head = /obj/item/clothing/head/roguetown/tsoridyshood
 			neck = /obj/item/clothing/neck/roguetown/psicross/tsoridys
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -66,13 +66,13 @@
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/tsoridys
 			shirt = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			head = /obj/item/clothing/head/roguetown/variellemask
 			neck = /obj/item/clothing/neck/roguetown/psicross/varielle
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/varielle
 			cloak = /obj/item/clothing/cloak/templar/variellian
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			head = /obj/item/clothing/head/roguetown/roguehood
 			neck = /obj/item/clothing/neck/roguetown/psicross/nunos
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -80,14 +80,14 @@
 			pants = /obj/item/clothing/under/roguetown/trou
 			cloak = /obj/item/clothing/cloak/templar/nunite
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-		if(/datum/patron/peoples_pantheon/carthus)
+		if(/datum/patron/good_pantheon/minhur)
 			head = /obj/item/clothing/head/roguetown/roguehood
 			neck = /obj/item/clothing/neck/roguetown/psicross/carthus
 			cloak = /obj/item/clothing/cloak/templar/carthus
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/white
-		if(/datum/patron/three_sisters/kasmidian)
+		if(/datum/patron/chaos_pantheon/jayx)
 			head = /obj/item/clothing/head/roguetown/roguehood
 			neck = /obj/item/clothing/neck/roguetown/psicross/carthus
 			cloak = /obj/item/clothing/cloak/templar/kasmidian

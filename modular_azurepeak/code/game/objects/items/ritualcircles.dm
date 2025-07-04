@@ -17,12 +17,12 @@
 /obj/structure/ritualcircle/aeternus
 	name = "Rune of the Sun" 
 	icon_state = "astrata_chalky" // Ensure your icon state has an active / inactive state, should it call them. 
-	desc = "The holy rune of Aeternus; god of the sun."
+	desc = "The Runes of the Sun."
 	/// Valid options for rites to perform on this ritual circle.
 	var/solarrites = list("Guiding Light")
 
 /obj/structure/ritualcircle/aeternus/attack_hand(mob/living/user) 
-	if((user.patron?.type) != /datum/patron/lording_three/aeternus)
+	if((user.patron?.type) != /datum/patron/lawful_pantheon/elysius)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -70,7 +70,7 @@
 	var/lunarrites = list("Moonlight Dance") // list for more to be added later
 
 /obj/structure/ritualcircle/zira/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/lording_three/zira)
+	if((user.patron?.type) != /datum/patron/lawful_pantheon/lune)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -113,7 +113,7 @@
 	var/bestialrites = list("Rite of the Lesser Wolf")
 
 /obj/structure/ritualcircle/tamari/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/three_sisters/tamari)
+	if((user.patron?.type) != /datum/patron/sylvan/sylvarhn)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -164,7 +164,7 @@
 	var/deathrites = list("Death Bargain")
 
 /obj/structure/ritualcircle/tsoridys/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/lording_three/tsoridys)
+	if((user.patron?.type) != /datum/patron/neutral_pantheon/yamais)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -209,7 +209,7 @@
 	var/peacerites = list("Rite of Pacification")
 
 /obj/structure/ritualcircle/varielle/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/peoples_pantheon/varielle)
+	if((user.patron?.type) != /datum/patron/good_pantheon/viriitri)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))

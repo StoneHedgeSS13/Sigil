@@ -20,9 +20,9 @@
 	..()
 
 	// Add druidic skill for Tamari followers
-	if(istype(H.patron, /datum/patron/three_sisters/tamari))
+	if(istype(H.patron, /datum/patron/sylvan/sylvarhn))
 		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
-		to_chat(H, span_notice("As a follower of Tamari, you have innate knowledge of druidic magic."))
+		to_chat(H, span_notice("As a follower of Wyld, you have innate knowledge of druidic magic."))
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
@@ -64,25 +64,25 @@
 				if("MY BARE HANDS!!!")
 					ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
 			switch(H.patron?.type)
-				if(/datum/patron/lording_three/aeternus)
+				if(/datum/patron/lawful_pantheon/elysius)
 					head = /obj/item/clothing/head/roguetown/roguehood/aeternus
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/aeternus
-				if(/datum/patron/lording_three/zira)
+				if(/datum/patron/lawful_pantheon/lune)
 					head =  /obj/item/clothing/head/roguetown/zirahood
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/zira
-				if(/datum/patron/peoples_pantheon/cinella)
+				if(/datum/patron/lawful_pantheon/prethwyn)
 					head = /obj/item/clothing/head/roguetown/roguehood/cinella
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/cinella
-				if(/datum/patron/three_sisters/tamari)
+				if(/datum/patron/sylvan/sylvarhn)
 					head = /obj/item/clothing/head/roguetown/tamarimask
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/tamari
-				if(/datum/patron/lording_three/tsoridys)
+				if(/datum/patron/good_pantheon/minhur)
 					head = /obj/item/clothing/head/roguetown/tsoridyshood
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/tsoridys
-				if (/datum/patron/three_sisters/nunos)
+				if (/datum/patron/good_pantheon/svaeryhog)
 					head = /obj/item/clothing/head/roguetown/roguehood //placeholder
 					cloak = /obj/item/clothing/cloak/templar/nunite
-				if (/datum/patron/peoples_pantheon/varielle)
+				if (/datum/patron/good_pantheon/abyssia)
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/varielle
 					head = /obj/item/clothing/head/roguetown/variellemask
 				else
@@ -122,31 +122,31 @@
 			H.cmode_music = 'sound/music/combat_holy.ogg'
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			switch(H.patron?.type)
-				if(/datum/patron/lording_three/aeternus)
+				if(/datum/patron/lawful_pantheon/elysius)
 					cloak = /obj/item/clothing/cloak/templar/aeternus
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/aeternian
-				if(/datum/patron/lording_three/zira)
+				if(/datum/patron/lawful_pantheon/lune)
 					cloak = /obj/item/clothing/cloak/templar/zira
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/zirahelm
-				if(/datum/patron/peoples_pantheon/cinella)
+				if(/datum/patron/good_pantheon/abyssia)
 					cloak = /obj/item/clothing/cloak/templar/cinella
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
-				if(/datum/patron/three_sisters/tamari)
+				if(/datum/patron/sylvan/sylvarhn)
 					cloak = /obj/item/clothing/cloak/templar/tamari
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/tamarihelm
-				if(/datum/patron/lording_three/tsoridys)
+				if(/datum/patron/neutral_pantheon/yamais)
 					cloak = /obj/item/clothing/cloak/templar/tsoridys
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/tsoridyshelm
-				if (/datum/patron/three_sisters/nunos)
+				if (/datum/patron/good_pantheon/svaeryhog)
 					cloak = /obj/item/clothing/cloak/templar/nunos
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/nunos
-				if (/datum/patron/peoples_pantheon/varielle)
+				if (/datum/patron/good_pantheon/viriitri)
 					cloak = /obj/item/clothing/cloak/templar/varielle
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/variellian
-				if (/datum/patron/peoples_pantheon/carthus)
+				if (/datum/patron/good_pantheon/minhur)
 					cloak = /obj/item/clothing/cloak/templar/carthus
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
-				if (/datum/patron/three_sisters/kasmidian)
+				if (/datum/patron/chaos_pantheon/jayx)
 					cloak = /obj/item/clothing/cloak/templar/kasmidian
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 				else
@@ -205,23 +205,23 @@
 			H.change_stat("speed", 2)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			switch(H.patron?.type)
-				if(/datum/patron/lording_three/aeternus)
+				if(/datum/patron/lawful_pantheon/elysius)
 					cloak = /obj/item/clothing/cloak/templar/aeternus
-				if(/datum/patron/lording_three/zira)
+				if(/datum/patron/lawful_pantheon/lune)
 					cloak = /obj/item/clothing/cloak/templar/zira
-				if(/datum/patron/peoples_pantheon/cinella)
+				if(/datum/patron/good_pantheon/abyssia)
 					cloak = /obj/item/clothing/cloak/templar/cinella
-				if(/datum/patron/three_sisters/tamari)
+				if(/datum/patron/sylvan/sylvarhn)
 					cloak = /obj/item/clothing/cloak/templar/tamari
-				if(/datum/patron/lording_three/tsoridys)
+				if(/datum/patron/neutral_pantheon/yamais)
 					cloak = /obj/item/clothing/cloak/templar/tsoridys
-				if (/datum/patron/three_sisters/nunos)
+				if (/datum/patron/good_pantheon/svaeryhog)
 					cloak = /obj/item/clothing/cloak/templar/nunos
-				if (/datum/patron/peoples_pantheon/varielle)
+				if (/datum/patron/good_pantheon/viriitri)
 					cloak = /obj/item/clothing/cloak/templar/varielle
-				if (/datum/patron/peoples_pantheon/carthus)
+				if (/datum/patron/good_pantheon/minhur)
 					cloak = /obj/item/clothing/cloak/templar/carthus
-				if (/datum/patron/three_sisters/kasmidian)
+				if (/datum/patron/chaos_pantheon/jayx)
 					cloak = /obj/item/clothing/cloak/templar/kasmidian
 				else
 					cloak = /obj/item/clothing/cloak/cape/crusader
@@ -270,26 +270,26 @@
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
 			switch(H.patron?.type)
-				if(/datum/patron/lording_three/aeternus)
+				if(/datum/patron/lawful_pantheon/elysius)
 					head = /obj/item/clothing/head/roguetown/roguehood/aeternus
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/aeternus
-				if(/datum/patron/lording_three/zira)
+				if(/datum/patron/lawful_pantheon/lune)
 					head =  /obj/item/clothing/head/roguetown/zirahood
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/zira
-				if(/datum/patron/peoples_pantheon/cinella)
+				if(/datum/patron/good_pantheon/abyssia)
 					head = /obj/item/clothing/head/roguetown/roguehood/cinella
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/cinella
-				if(/datum/patron/three_sisters/tamari)
+				if(/datum/patron/sylvan/sylvarhn)
 					head = /obj/item/clothing/head/roguetown/tamarimask
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/tamari
 					H.cmode_music = 'sound/music/combat_druid.ogg'
-				if(/datum/patron/lording_three/tsoridys)
+				if(/datum/patron/neutral_pantheon/yamais)
 					head = /obj/item/clothing/head/roguetown/tsoridyshood
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/tsoridys
-				if (/datum/patron/three_sisters/nunos)
+				if (/datum/patron/good_pantheon/svaeryhog)
 					head = /obj/item/clothing/head/roguetown/roguehood //placeholder
 					cloak = /obj/item/clothing/cloak/templar/nunite
-				if (/datum/patron/peoples_pantheon/varielle)
+				if (/datum/patron/good_pantheon/viriitri)
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe/varielle
 					head = /obj/item/clothing/head/roguetown/variellemask
 				else
@@ -300,23 +300,23 @@
 			START_PROCESSING(SSobj, C)
 
 	switch(H.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
+		if(/datum/patron/lawful_pantheon/elysius)
 			neck = /obj/item/clothing/neck/roguetown/psicross/aeternus
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			neck = /obj/item/clothing/neck/roguetown/psicross/zira
-		if(/datum/patron/peoples_pantheon/cinella)
+		if(/datum/patron/good_pantheon/abyssia)
 			neck = /obj/item/clothing/neck/roguetown/psicross/cinella
-		if(/datum/patron/three_sisters/tamari)
+		if(/datum/patron/sylvan/sylvarhn)
 			neck = /obj/item/clothing/neck/roguetown/psicross/tamari
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/yamais)
 			neck = /obj/item/clothing/neck/roguetown/psicross/tsoridys
-		if(/datum/patron/peoples_pantheon/carthus)
+		if(/datum/patron/good_pantheon/minhur)
 			neck = /obj/item/clothing/neck/roguetown/psicross/carthus
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			neck = /obj/item/clothing/neck/roguetown/psicross/nunos
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			neck = /obj/item/clothing/neck/roguetown/psicross/varielle
-		if(/datum/patron/three_sisters/kasmidian) // SOLARIS NOTE: kasmidian would ideally have their own psicross but idc to change this off xylix behavior rn
+		if(/datum/patron/chaos_pantheon/jayx) // SOLARIS NOTE: kasmidian would ideally have their own psicross but idc to change this off xylix behavior rn
 			var/list/psicross_options = list(
 			/obj/item/clothing/neck/roguetown/psicross,
 			/obj/item/clothing/neck/roguetown/psicross/aeternus,

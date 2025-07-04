@@ -60,22 +60,22 @@
 			if (CLERIC_REQ_4)
 				our_faith.passive_devotion_gain += 1
 	switch(recipient.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
-			recipient.mind?.special_items["Aeternus Psycross"] = /obj/item/clothing/neck/roguetown/psicross/aeternus
-		if(/datum/patron/peoples_pantheon/cinella)
-			recipient.mind?.special_items["Cinella Psycross"] = /obj/item/clothing/neck/roguetown/psicross/cinella
-		if(/datum/patron/three_sisters/tamari)
-			recipient.mind?.special_items["Tamari Psycross"] = /obj/item/clothing/neck/roguetown/psicross/tamari
-		if(/datum/patron/lording_three/tsoridys)
-			recipient.mind?.special_items["Tsoridys Psycross"] = /obj/item/clothing/neck/roguetown/psicross/tsoridys
-		if(/datum/patron/peoples_pantheon/varielle) 
-			recipient.mind?.special_items["Varielle Psycross"] = /obj/item/clothing/neck/roguetown/psicross/varielle
-		if(/datum/patron/lording_three/zira)
-			recipient.mind?.special_items["Zira Psycross"] = /obj/item/clothing/neck/roguetown/psicross/zira
-		if(/datum/patron/peoples_pantheon/carthus)
-			recipient.mind?.special_items["Carthus Psycross"] =/obj/item/clothing/neck/roguetown/psicross/carthus
-		if(/datum/patron/three_sisters/nunos)
-			recipient.mind?.special_items["Nunos Psycross"] = /obj/item/clothing/neck/roguetown/psicross/nunos
+		if(/datum/patron/lawful_pantheon/elysius)
+			recipient.mind?.special_items["Sun Amulet"] = /obj/item/clothing/neck/roguetown/psicross/aeternus
+		if(/datum/patron/good_pantheon/abyssia)
+			recipient.mind?.special_items["Storm Amulet"] = /obj/item/clothing/neck/roguetown/psicross/cinella
+		if(/datum/patron/sylvan/sylvarhn)
+			recipient.mind?.special_items["Nature Amulet"] = /obj/item/clothing/neck/roguetown/psicross/tamari
+		if(/datum/patron/neutral_pantheon/yamais)
+			recipient.mind?.special_items["Death Amulet"] = /obj/item/clothing/neck/roguetown/psicross/tsoridys
+		if(/datum/patron/good_pantheon/viriitri) 
+			recipient.mind?.special_items["Love Amulet"] = /obj/item/clothing/neck/roguetown/psicross/varielle
+		if(/datum/patron/lawful_pantheon/lune)
+			recipient.mind?.special_items["Moon Amulet"] = /obj/item/clothing/neck/roguetown/psicross/zira
+		if(/datum/patron/good_pantheon/minhur)
+			recipient.mind?.special_items["Battle Amulet"] =/obj/item/clothing/neck/roguetown/psicross/carthus
+		if(/datum/patron/good_pantheon/svaeryhog)
+			recipient.mind?.special_items["Forge Amulet"] = /obj/item/clothing/neck/roguetown/psicross/nunos
 
 /datum/virtue/combat/duelist
 	name = "Duelist Apprentice"

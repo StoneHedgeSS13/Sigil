@@ -51,31 +51,31 @@
 	neck = /obj/item/clothing/neck/roguetown/psicross/aeternus
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
+		if(/datum/patron/lawful_pantheon/elysius)
 			neck = /obj/item/clothing/neck/roguetown/psicross/aeternus
 			cloak = /obj/item/clothing/cloak/tabard/crusader/aeternus
-		if(/datum/patron/peoples_pantheon/cinella)
+		if(/datum/patron/good_pantheon/abyssia)
 			neck = /obj/item/clothing/neck/roguetown/psicross/cinella
 			cloak = /obj/item/clothing/cloak/cinellatabard
-		if(/datum/patron/three_sisters/tamari)
+		if(/datum/patron/sylvan/sylvarhn)
 			neck = /obj/item/clothing/neck/roguetown/psicross/tamari
 			cloak = /obj/item/clothing/cloak/tabard/crusader/tamari
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/yamais)
 			neck = /obj/item/clothing/neck/roguetown/psicross/tsoridys
 			cloak = /obj/item/clothing/cloak/templar/tsoridian
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			neck = /obj/item/clothing/neck/roguetown/psicross/varielle
 			cloak = /obj/item/clothing/cloak/templar/variellian
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			neck = /obj/item/clothing/neck/roguetown/psicross/zira
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
-		if(/datum/patron/peoples_pantheon/carthus)
+		if(/datum/patron/good_pantheon/minhur)
 			neck = /obj/item/clothing/neck/roguetown/psicross/carthus
 			cloak = /obj/item/clothing/cloak/tabard/crusader/carthus
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			neck = /obj/item/clothing/neck/roguetown/psicross/nunos
 			cloak = /obj/item/clothing/cloak/templar/nunite
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			var/list/psicross_options = list(
 			/obj/item/clothing/neck/roguetown/psicross,
 			/obj/item/clothing/neck/roguetown/psicross/aeternus,
@@ -106,7 +106,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 		ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/three_sisters/nunos)
+		if(H.patron?.type == /datum/patron/good_pantheon/svaeryhog)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
@@ -156,35 +156,35 @@
 	wrists = /obj/item/clothing/neck/roguetown/psicross/aeternus
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
+		if(/datum/patron/lawful_pantheon/elysius)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/aeternus
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/aeternian
 			cloak = /obj/item/clothing/cloak/templar/aeternian
-		if(/datum/patron/peoples_pantheon/cinella)
+		if(/datum/patron/good_pantheon/abyssia)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/cinella
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/cinellagreathelm
 			cloak = /obj/item/clothing/cloak/cinellatabard
-		if(/datum/patron/three_sisters/tamari)
+		if(/datum/patron/sylvan/sylvarhn)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/tamari
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/tamarihelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/tamari
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/yamais)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/tsoridys
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/tsoridian
 			cloak = /obj/item/clothing/cloak/templar/tsoridian
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/varielle
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/variellian
 			cloak = /obj/item/clothing/cloak/templar/variellian
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/zira
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/zirahelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
-		if(/datum/patron/peoples_pantheon/carthus)
+		if(/datum/patron/good_pantheon/minhur)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/carthus
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 			cloak = /obj/item/clothing/cloak/tabard/crusader/carthus
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/nunos
 			cloak = /obj/item/clothing/cloak/templar/nunite
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/nunos
@@ -210,7 +210,7 @@
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/three_sisters/nunos)
+		if(H.patron?.type == /datum/patron/good_pantheon/svaeryhog)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
@@ -232,21 +232,21 @@
 	. = ..()
 	var/weapons = list("Bastard Sword","Flail","Mace","Battle Axe")
 	switch(H.patron?.type)
-		if(/datum/patron/lording_three/aeternus) //Unique patron weapons, more can be added here if wanted.
+		if(/datum/patron/lawful_pantheon/elysius) //Unique patron weapons, more can be added here if wanted.
 			weapons += "Solar Judgement"
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			weapons += "Moonlight Khopesh"
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/yamais)
 			weapons += "Swift End"
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/good_pantheon/svaeryhog)
 			weapons += "Forgefiend"
-		if(/datum/patron/three_sisters/tamari)
+		if(/datum/patron/sylvan/sylvarhn)
 			weapons += "Summer Scythe"
-		if(/datum/patron/three_sisters/kasmidian)
+		if(/datum/patron/chaos_pantheon/jayx)
 			weapons += "Cackle Lash"
-		if(/datum/patron/peoples_pantheon/carthus)
+		if(/datum/patron/good_pantheon/minhur)
 			weapons += "Duel Settler"
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			weapons += "The Heartstring"
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)

@@ -13,23 +13,23 @@
 
 	var/ritechoices = list()
 	switch (user.patron?.type)
-		if(/datum/patron/lording_three/aeternus)
+		if(/datum/patron/lawful_pantheon/elysius)
 			ritechoices+="Rune of Sun"
-		if(/datum/patron/lording_three/zira)
+		if(/datum/patron/lawful_pantheon/lune)
 			ritechoices+="Rune of Moon"
-		if(/datum/patron/three_sisters/tamari)
-			ritechoices+="Rune of Beasts"
-		if(/datum/patron/three_sisters/nunos)
+		if(/datum/patron/sylvan/sylvarhn)
+			ritechoices+="Rune of Nature"
+		if(/datum/patron/good_pantheon/svaeryhog)
 			ritechoices+="Rune of Forge"
-		if(/datum/patron/three_sisters/kasmidian)
-			ritechoices+="Rune of Trickery"
-		if(/datum/patron/lording_three/tsoridys)
+		if(/datum/patron/neutral_pantheon/onder)
+			ritechoices+="Rune of Whimsy"
+		if(/datum/patron/neutral_pantheon/yamais)
 			ritechoices+="Rune of Death"
-		if(/datum/patron/peoples_pantheon/varielle)
+		if(/datum/patron/good_pantheon/viriitri)
 			ritechoices+="Rune of Love"
-		if(/datum/patron/peoples_pantheon/carthus)
-			ritechoices+="Rune of War"
-		if(/datum/patron/peoples_pantheon/cinella)
+		if(/datum/patron/good_pantheon/minhur)
+			ritechoices+="Rune of Battle"
+		if(/datum/patron/good_pantheon/abyssia)
 			ritechoices+="Rune of Storm"
 
 	var/runeselection = input(user, "Which rune shall I inscribe?", src) as null|anything in ritechoices
@@ -45,8 +45,8 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/zira(step_turf)
-		if("Rune of Beasts")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Madness"))
+		if("Rune of Nature")
+			to_chat(user,span_cultsmall("I begin inscribing the rune of the Wyld"))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/tamari(step_turf)
@@ -55,7 +55,7 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/nunos(step_turf)
-		if("Rune of Trickery")
+		if("Rune of Whimsy")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of His Trickery..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
@@ -70,7 +70,7 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/varielle(step_turf)
-		if("Rune of War")
+		if("Rune of Battle")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of His Prowess..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)

@@ -9,7 +9,7 @@
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = list(/datum/patron/three_sisters/tamari)
+	allowed_patrons = list(/datum/patron/sylvan/sylvarhn, /datum/patron/sylvan/danulir, /datum/patron/sylvan/belanos, /datum/patron/sylvan/aaravos, /datum/patron/sylvan/maibe, /datum/patron/sylvan/gwybb)
 	outfit = /datum/outfit/job/roguetown/druid
 	tutorial = "Nature's gift to Astralith was the earth and it's life; and it is ours to protect and venerate, as much as we can."
 

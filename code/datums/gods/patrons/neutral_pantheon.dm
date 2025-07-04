@@ -35,3 +35,14 @@
 	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
 	t3 = /obj/effect/proc_holder/spell/invoked/stasis
 	extra_spell = /obj/effect/proc_holder/spell/targeted/soulspeak
+
+/datum/patron/chaos_pantheon/jayx
+	name = "Jayx"
+	domain = "Neutral Chaotic: (Magic, Revelation, Intellect, Discovery, Ambition)"
+	desc= "Jayx is a phoenix made entirely of blue magick flame. Said to have been born by the Aeons and fate. They serve as a god to Astralith in times of need and discovery."
+	worshippers = "Wizards, Spellcasters, Magicians of all walks."
+	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_NOSTINK)	//No stink is generic but they deal with dead bodies so.. makes sense, I suppose?
+	t1 = /obj/effect/proc_holder/spell/invoked/avert
+	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
+	t3 = /obj/effect/proc_holder/spell/invoked/stasis
+	extra_spell = /obj/effect/proc_holder/spell/targeted/soulspeak

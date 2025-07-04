@@ -1,3 +1,4 @@
+
 /datum/patron/evil_pantheon/orckhest
 	name = "Orckhest"
 	domain = "Evil Chaotic. Opression and Indulgence; Consumption, Scorched Earth, Annhilation, Blood, Hatred."
@@ -24,12 +25,14 @@
 	t3 = /obj/effect/proc_holder/spell/targeted/churn
 	extra_spell = /obj/effect/proc_holder/spell/targeted/soulspeak
 
-/datum/patron/chaos_pantheon/rathyx
-	name = "Rathyx"
-	domain = "Evil Chaotic. Opression and Indulgence; War, Chaos, Suffering, Consumption, Hatred."
-	desc = "Rathyx was once a lethal warrior of the Infernal planes. Rathyx claimed the throne of hell; ascending to the god of ultimate domination."
-	worshippers = "Devils, Warmongers, Tyranny, Lies."
+/datum/patron/evil_pantheon/nyrnhe
+	name = "Nyhrne"
+	domain = "Evil Lawful. Undeath, Pain, Torture, Suffering, Blood."
+	desc = "Nyrhne is a patron god of the Dark Elves. She was a powerful matriarch before she was sired; leading the underdark lawfully as a vampiric force."
+	worshippers = "Vampires, Necromancers, Dark Elves, Torturers, Blood Cultists."
 	mob_traits = list(TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
+
+
